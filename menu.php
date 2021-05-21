@@ -41,7 +41,7 @@
         ?>
 
 <?php //ログイン後は表示されないように処理
-if (!(isset($_SESSION['user']))) {
+if ((isset($_SESSION['user']))) {
 ?>
     <!-- カート -->
         <div class="box cart">

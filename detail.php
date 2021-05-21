@@ -18,8 +18,6 @@
 	$sql = "select * from book";
 	//プリペアードステートメントを作る
 	$stm = $pdo->prepare($sql);
-	//プリペアードステートメントに値をバインドする
-	$stm->bindValue(':num',$_REQUEST['num'],PDO::PARAM_STR);
 	//SQL文を実行する
 	$stm->execute();
 	//結果の取得（連想配列で受け取る）
